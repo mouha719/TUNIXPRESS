@@ -1,5 +1,5 @@
 #model{
-    background-image: url("../img/gigachad.jpg");
+    background-image: url("../img/model.jpg");
     height: 120vh;
     width: 100%;
     background-position: top 25% right none;
@@ -140,7 +140,7 @@
   padding: 10px 0;
   }
   #banner span{
-  color: #ef3636;
+  color: #000;
   
   }
   
@@ -217,12 +217,12 @@
   }
   
   #banner3 h2{
-  color: #fff;
+  color: #ffd700;
   font-weight: 900;
   font-size: 22px ;
   }
   #banner3 h3{
-  color: #ec544e;
+  color: #088178;
   font-weight: 800;
   font-size: 15px ;
   }

@@ -74,7 +74,7 @@
       height: 20vh;
     }
     #sm-banner .banner-box {
-     
+     margin-bottom: 20px;
       min-width: 100%;
       height: 30vh;
     }
@@ -112,7 +112,6 @@
     }
   
     #header {
-     
       padding: 10px 30px;
      
     }
@@ -127,8 +126,7 @@
     #model {
       
       padding: 0 20px;
-      background-position: right 85%
-      top 80%;
+      background-position: right 60% top 80%;
       ;
     }
     #feature{
@@ -162,6 +160,9 @@
     #newsletter .form{
       width: 100%;
     }
+    #newsletter .form input{
+      display: flex;
+    }
     footer .copyright{
       text-align: start;
     }
@@ -178,6 +179,14 @@
       width: 100%;
       
     }
+    .wrapper input{
+      display: none;
+    }
+    
+    .glass {
+      transform: translateY(-25px);
+    }
+    
     /*about page */
     #about {
       flex-direction: column;
@@ -226,6 +235,11 @@
     #subtotal {
     width: 100%;
     padding: 20px;
+    }
+
+    /*register page*/
+    input{
+      display: flex;
     }
   
   }

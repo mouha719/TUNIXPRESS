@@ -8,6 +8,8 @@
     text-align: center;
     flex-direction: column;
     padding: 14px;
+    background-position: center;
+    background-size: cover;
   
   }
   #products h2{
@@ -16,7 +18,7 @@
   
   #page-header h2,
   #page-header p{
-    color: #fff;
+    color :#FFD700 ;
   }
   #pagination {
     text-align: center;
