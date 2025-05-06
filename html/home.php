@@ -1,0 +1,225 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: home.html"); 
+    exit();
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUNIXPRESS</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="../css/global-style.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <link rel="stylesheet" href="../css/searchbar.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="../img/logo.png" class="logo" alt=""></a>
+        <div class="wrapper">
+            <div class="searchbar">
+                <input type="text" placeholder="Type to search...">
+                <i class="fas fa-search glass"></i>
+                <div class="autocom-box">
+                    <li>clavin klein</li>
+                    <li>men's nature shirt</li>
+                    <li>men letter patched detail pocket shirt</li>
+                    <li>bershka</li>
+                    <li>zara</li>
+                    <li>men solid botton shirt</li>
+                    <li>aldo</li>
+                    <li>anti skinny jeans</li>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="../html/home.html">Home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="logout.php">Logout</a></li> 
+                <li id="lg-bag"><a href="../html/cart.html"><i class="far fa-shopping-bag"></i></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="ipad">
+            <a href="../html/cart.html"><i class="far fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+
+    </section>
+
+    <section id="model">
+        <h4>Trade Daily</h4>
+        <h2>Exclusive deals</h2>
+        <h1>On all our products</h1>
+        <p>purchase with coupons and up to 60% off!!</p>
+        <a href="shop.html"> <button>Shop Now</button></a>
+    </section>
+
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="../img/features/f1.png" alt="error!">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../img/features/f2.png" alt="error!">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../img/features/f3.png" alt="error!">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../img/features/f4.png" alt="error!">
+            <h6>Discounts</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../img/features/f5.png" alt="error!">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="../img/features/f6.png" alt="error!">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
+
+    <section id="products" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>All Season Collections</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="../img/products/f1.jpg" alt="error!">
+                <div class="des">
+                    <span>calvin klein</span>
+                    <h5>men's nature shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$65</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../img/products/f2.jpg" alt="error!">
+                <div class="des">
+                    <span>bershka</span>
+                    <h5>men lettetr patched detail pocket shirt</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$43</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="../img/products/f3.jpg" alt="error!">
+                <div class="des">
+                    <span>zara</span>
+                    <h5>men solid botton up shirt without tee</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$60</h4>
+                </div>
+                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Repair services</h4>
+        <h2>Up to <span>70% off</span> - All T-Shirts & Accessories</h2>
+        <button class="normal">Explore More</button>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            <div class="form">
+                <input type="text" placeholder="Your email address">
+                <button class="normal">Sign Up</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="../img/logo.png" alt="">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>2068 Mourouj, Zahra road, Ben Arous </p>
+            <p><strong>Phone: </strong>+216 50752477</p>
+            <p><strong>Hours: </strong>08:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html"> About Us</a>
+            <a href="#"> Delivery Information</a>
+            <a href="#"> Privacy Policy</a>
+            <a href="#"> Terms & Conditions</a>
+            <a href="contact.html"> Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#"> Sign In</a>
+            <a href="#"> View Cart</a>
+            <a href="#"> My Wishlist</a>
+            <a href="#"> Track My Order</a>
+            <a href="#"> Tech Support</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../img/pay/app.jpg" alt="error!">
+                <img src="../img/pay/play.jpg" alt="error!">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../img/pay/payment-method.png" alt="error!">
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>© 2025 TUNIXPRESS</p>
+    </div>
+</body>
+
+</html>

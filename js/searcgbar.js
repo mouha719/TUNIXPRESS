@@ -9,30 +9,29 @@ inputBox.onkeyup = (e) => {
         searchWrapper.classList.add("active");
         emptyArray = suggestions.filter((data) => {
             return data.toLocaleLowerCase().startsWith(userData.toLocaleLowerCase());
-
-
         });
 
         emptyArray = emptyArray.map((data) => {
-            return data = `<li>${data}</li>`;
+            return `<li>${data}</li>`;
         });
-        console.log(emptyArray);
-        searchWrapper.classList.add("active"); 
+
         showSuggestions(emptyArray);
         let allList = suggBox.querySelectorAll("li");
         for (let i = 0; i < allList.length; i++) {
             allList[i].setAttribute("onclick", "select(this)");
         }
-    }else {
-        searchWrapper.classList.remove("active"); 
+    } else {
+        searchWrapper.classList.remove("active");
     }
-    
- }
+};
+
 function select(element) {
     let selectData = element.textContent;
     inputBox.value = selectData;
     searchWrapper.classList.remove("active");
-    }
+    const encodedProduct = encodeURIComponent(selectData);
+    window.location.href = `singleproduct.html?product=${encodedProduct}`;
+}
 
 function showSuggestions(list) {
     let listData;
@@ -40,7 +39,7 @@ function showSuggestions(list) {
         userValue = inputBox.value;
         listData = `<li>${userValue}</li>`;
     } else {
-      listData = list.join('');
+        listData = list.join('');
     }
     suggBox.innerHTML = listData;
 }
